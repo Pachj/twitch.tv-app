@@ -51,7 +51,7 @@ function displayOnlineChannel(channelToDisplay) {
     $("#game").html(game);
     $("#description").html(description);*/
 
-    $("#online").append('<div><div class="row text-center"><div class="col-xs-2"><img class="logo" src="' + logo + '"></div>' +
+    $("#online").append('<div class="frame"><div class="row text-center"><div class="col-xs-2"><img class="logo" src="' + logo + '"></div>' +
         '<div class="col-xs-10 col-md-3"><h4>' + name + '</h4></div><div class="col-xs-12 col-md-7">' +
         '<p>' + game + '</p></div></div><div class="row"><div class="col-md-12"><p>' + description + '</p></div></div></div>');
 }
@@ -66,7 +66,7 @@ function displayOfflineChannel(channelToDisplay) {
     $("#offline-name").html(name);
     $("#offline-description").html(description);*/
 
-    $("#offline").append('<div><div class="row text-center"><div class="col-xs-2"><img class="logo" src="' + logo + '"></div>' +
+    $("#offline").append('<div class="frame"><div class="row text-center"><div class="col-xs-2"><img class="logo" src="' + logo + '"></div>' +
         '<div class="col-xs-10 col-md-3"><h4>' + name + '</h4></div></div><div class="row">' +
         '<div class="col-md-12"><p>' + description + '</p></div></div></div>');
 }
@@ -77,7 +77,7 @@ function displayNotExistingChannel() {
     let name = "Error: Channel is not existing!";
     let description = "Error: Channel is not existing!";
 
-    $("#offline").append('<div><div class="row text-center"><div class="col-xs-2"><img class="logo" src="' + logo + '"></div>' +
-        '<div class="col-xs-10 col-md-3"><h4>' + name + '</h4></div></div><div class="row">' +
-        '<div class="col-md-12"><p>' + description + '</p></div></div></div>');
+    $("#error").append('<div class="frame"><div class="row text-center"><div class="col-xs-2">' +
+        '<img class="logo" src="' + logo + '"></div><div class="col-xs-10 col-md-3"><h4>' + name + '</h4></div></div>' +
+        '<div class="row"><div class="col-md-12"><p>' + description + '</p></div></div></div>');
 }
