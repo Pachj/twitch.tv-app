@@ -1,7 +1,7 @@
 /**
  * Created by Henry on 20.02.17.
  */
-const channels = ["summonersinnlive", "freecodecamp", "sdghuishfiuzsgdft", "wintergaming"];
+const channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
 
 $(document).ready(() => {
     checkOnline();
